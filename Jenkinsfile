@@ -8,6 +8,13 @@ pipeline {
                 sh 'docker --version'
             }
         }
+        
+        stage ('build docker images') {
+            steps {
+                sh 'docker build .'
+            }
+        }
+        
 
     }
 }
