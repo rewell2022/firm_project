@@ -3,7 +3,7 @@ pipeline {
 
     stages {
 
-        stage ('check if docker is install') {
+        stage ('check if docker is installed') {
             steps {
                 sh 'docker --version'
             }
